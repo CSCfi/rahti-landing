@@ -2,7 +2,7 @@
 A repository for Rahti Service Landing Page
 
 ## Address
-[https://rahti.csc.fi/](https://rahti.csc.fi/)
+<a href="https://rahti.csc.fi/" target="_blank">https://rahti.csc.fi</a>
 
 
 ### Development
