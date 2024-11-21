@@ -35,7 +35,7 @@ To see any changes made to the **content**, you can use the `reload.sh` script.
 
 #### Hosted on Rahti (The Standalone for `dev` Branch only)
 
-To see the changes during the development, you may merge your branch with `dev` branch. This will automatically trigger a build in Rahti at [this address](https://dev-rahti-landing.rahtiapp.fi). 
+To see the changes during the development, you may merge your branch with `dev` branch. This will automatically trigger a build in Rahti at [this address](https://rahti-landing-dev.rahtiapp.fi). 
 
 
 ### Deployment
