@@ -14,7 +14,7 @@ The following variables are pre-defined in [index_content.yaml](/src/html/index_
 |--------------------------------|-----------------------------------------------|
 | CLUSTER_ENV_VERSION            | Openshift / Kubernetes version.               |
 | CLUSTER_LOGIN_URL_OIDCIDP      | URL to login console of Rahti.                |
-| SERVICE_DOCS_URL               | URL to documents                              |
+| SERVICE_DOCS_URL               | URL to documents.                             |
 | HEADER_BANNER                  | If set, a banner will be appear in the header.|
 | LANDING_PAGE_ANNOUNCEMENTS     | The content will be shwon in the announcement secton. |
 
