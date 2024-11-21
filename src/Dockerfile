@@ -18,6 +18,7 @@ ENV ROOT_GROUP_DIRS='/var/run /var/log/nginx /var/lib/nginx'
 RUN chgrp -R root ${ROOT_GROUP_DIRS} &&\
     chmod -R g+rwx ${ROOT_GROUP_DIRS}
 
+RUN sed -i 's/80 default_server/8080 default_server/g' /etc/nginx/nginx.conf
 
 COPY ./requirements.txt /tmp
 
