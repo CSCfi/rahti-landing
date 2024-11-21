@@ -20,10 +20,11 @@ The following variables are pre-defined in [index_content.yaml](/src/html/index_
 
 
 ### Development
+#### Local
 For development, one docker-compose file is provided to generate the static pages and serve them at [https://localhost](https://localhost).
 
 ```bash
-docker compose up
+docker compose up -d
 ```
 
 To see any changes made to the **content**, you can use the `reload.sh` script.
@@ -32,7 +33,7 @@ To see any changes made to the **content**, you can use the `reload.sh` script.
 ./reload.sh
 ```
 
-### Hosted on Rahti (The Standalone for `dev` Branch only)
+#### Hosted on Rahti (The Standalone for `dev` Branch only)
 
 To see the changes during the development, you may merge your branch with `dev` branch. This will automatically trigger a build in Rahti at [this address](https://dev-rahti-landing.rahtiapp.fi). 
 
