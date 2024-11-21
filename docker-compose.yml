@@ -11,10 +11,6 @@ services:
   
   builder:
     build: src/.
-    environment:
-      CLUSTER_ENV_VERSION: "Openshift 4.15 / Kubernetes 1.28"
-      SERVICE_DOCS_URL: "https://docs.csc.fi/cloud/rahti2/"
-      CLUSTER_LOGIN_URL_OIDCIDP: "https://console-openshift-console.apps.2.rahti.csc.fi/dashboards"
     volumes:
       - html:/usr/share/nginx
 

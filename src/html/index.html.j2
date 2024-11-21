@@ -15,6 +15,11 @@
     <link rel="icon" type="image/x-icon" href="/static/CSC_2012_LOGO.png">
   </head>
   <body>
+    {% if HEADER_BANNER %}
+    <div class="header">
+        <p>{{ HEADER_BANNER }}</p>
+    </div>
+    {% endif %}
     <c-main>
         <c-toolbar class="relative"><c-csc-logo></c-csc-logo><a target="_self" href="#">Rahti</a></c-toolbar>
 
@@ -46,16 +51,20 @@
                 <div class="col content-c2">
                     <c-card class="card-1">
                         <c-card-title>Rahti-2</c-card-title>
-                        <c-card-content>{{ 'CLUSTER_ENV_VERSION' | env }}</c-card-content>
+                        <c-card-content>{{ CLUSTER_ENV_VERSION }}</c-card-content>
                         <c-card-actions>
-                            <c-button href="{{ 'CLUSTER_LOGIN_URL_OIDCIDP' | env }}">Login</c-button>
-                            <c-button href="{{ 'SERVICE_DOCS_URL' | env }}">Docs</c-button>
+                            <c-button href="{{ CLUSTER_LOGIN_URL_OIDCIDP }}">Login</c-button>
+                            <c-button href="{{ SERVICE_DOCS_URL }}">Docs</c-button>
                         </c-card-actions>
                     </c-card>
                     <c-card class="card-3">
                         <c-card-title>Announcements</c-card-title>
                         <c-card-content>
-                              
+                        {% if LANDING_PAGE_ANNOUNCEMENTS %}
+                        {% for ann in LANDING_PAGE_ANNOUNCEMENTS %}
+                            {{ ann }}
+                        {% endfor %}
+                        {% endif %}
                         </c-card-content>
                     </c-card>
                 </div>

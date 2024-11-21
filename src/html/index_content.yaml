@@ -1,0 +1,19 @@
+# This yaml file is used to store the content of the index page
+
+CLUSTER_ENV_VERSION: "Openshift 4.15 / Kubernetes 1.28"
+SERVICE_DOCS_URL: "https://docs.csc.fi/cloud/rahti2/"
+CLUSTER_LOGIN_URL_OIDCIDP: "https://console-openshift-console.apps.2.rahti.csc.fi/dashboards"
+
+# LANDING_PAGE_ANNOUNCEMENTS is a list.
+# Example for landing page announcement:
+# LANDING_PAGE_ANNOUNCEMENTS:
+#   - <p>this is a <a href="example.com">link</a></p>
+#   - <p>yet another announcement!</p>
+LANDING_PAGE_ANNOUNCEMENTS:
+
+
+
+# HEADER_BANNER is string.
+# In case you want to set a temporary banner in the header
+# HEADER_BANNER: "Maintenance!"
+HEADER_BANNER:
