@@ -39,6 +39,4 @@ COPY html/terms_of_use.html.j2 /tmp
 COPY html/sla.html.j2 /tmp
 COPY html/accessibility_statement.html.j2 /tmp
 
-RUN sh -c /tmp/make_config.sh
-
-CMD exit 0
+CMD sh -c /tmp/make_config.sh

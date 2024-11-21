@@ -1,2 +1,2 @@
 # This is what we actually install
-yasha==4.3
+yasha==5.0
