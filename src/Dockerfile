@@ -7,8 +7,17 @@ LABEL maintainer="The CSC Rahti Team <rahti-team@postit.csc.fi>"
 
 WORKDIR /tmp
 
-RUN yum -y install python39-pip python39 &&\
+RUN yum -y install nginx python39-pip python39 &&\
     yum clean all
+
+RUN chmod g+rwx /var/run /var/log/nginx
+
+# These need to be owned and writable by the root group in OpenShift
+ENV ROOT_GROUP_DIRS='/var/run /var/log/nginx /var/lib/nginx'
+
+RUN chgrp -R root ${ROOT_GROUP_DIRS} &&\
+    chmod -R g+rwx ${ROOT_GROUP_DIRS}
+
 
 COPY ./requirements.txt /tmp
 
