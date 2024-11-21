@@ -21,7 +21,7 @@
         <c-container class="content">
             <c-row>
                 <div class="col content-c1">
-                    <h2>Welcome to Rahti</h2>
+                    <h2>Welcome to Rahti!</h2>
                     <p>Rahti is a shared general-purpose container service for hosting projects.</p>
                     <p>Rahti Shared Container Service is based on Kubernetes/OpenShift technology and provides an
                     environment for hosting general-purpose container workloads. Because the service is shared
@@ -44,38 +44,18 @@
                     of the data as needed.</p>
                 </div>
                 <div class="col content-c2">
-                    <h2>Environments</h2>
                     <c-card class="card-1">
                         <c-card-title>Rahti-2</c-card-title>
-                        <c-card-content>{{ 'CLUSTER_LANDING_PAGE_ENV_VERSION' | env }}</c-card-content>
+                        <c-card-content>{{ 'CLUSTER_ENV_VERSION' | env }}</c-card-content>
                         <c-card-actions>
-                            <c-button href="{{ 'CLUSTER_LOGIN_URL_OIDCIDP' | env }}">Login page</c-button>
-                        </c-card-actions>
-                    </c-card>
-                    <c-card class="card-2">
-                        <c-card-title>Rahti</c-card-title>
-                        <c-card-content>{{ 'CLUSTER_LANDING_PAGE_SECONDARY_ENV_VERSION' | env }}</c-card-content>
-                        <c-card-actions>
-                            <c-button href="https://rahti.csc.fi:8443/">Login page</c-button>
-                            <c-button href="https://registry-console.rahti.csc.fi/">Registry login</c-button>
+                            <c-button href="{{ 'CLUSTER_LOGIN_URL_OIDCIDP' | env }}">Login</c-button>
+                            <c-button href="{{ 'SERVICE_DOCS_URL' | env }}">Docs</c-button>
                         </c-card-actions>
                     </c-card>
                     <c-card class="card-3">
-                        <c-card-title>News</c-card-title>
+                        <c-card-title>Announcements</c-card-title>
                         <c-card-content>
-                              <p>
-                              Glusterfs storage class was deprecated in Rahti 2. Users should migrate to
-                              alternative storage options (cinder, Allas, or project-specific custom solutions).
-                              </p>
-                              <p>
-                              Rahti 1 service is shutting down on 22.10.2024 - All the existing pods will be
-                              terminated. The resource quotas will be set to zero and users will not be able
-                              to launch new pods or use any resources.
-                              </p>
-                              <p>
-                              Rahti 1 image registry is shutting down on 05.11.2024 - Users will not be able
-                              to pull, push or use images in the registry.
-                             </p>
+                              
                         </c-card-content>
                     </c-card>
                 </div>

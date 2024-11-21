@@ -1,2 +1,1 @@
-# This is what we actually install
 yasha==5.0

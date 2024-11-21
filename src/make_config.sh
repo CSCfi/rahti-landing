@@ -1,9 +1,9 @@
 #!/bin/sh
 
 set -e
-: ${CLUSTER_LANDING_PAGE_ENV_VERSION?"Must set CLUSTER_LANDING_PAGE_ENV_VERSION"}
+: ${CLUSTER_ENV_VERSION?"Must set CLUSTER_LANDING_PAGE_ENV_VERSION"}
 : ${CLUSTER_LOGIN_URL_OIDCIDP?"Must set CLUSTER_LOGIN_URL_OIDCIDP"}
-: ${CLUSTER_LANDING_PAGE_SECONDARY_ENV_VERSION?"Must set CLUSTER_LANDING_PAGE_SECONDARY_ENV_VERSION"}
+: ${SERVICE_DOCS_URL?"Must set SERVICE_DOCS_URL"}
 
 mkdir -p /usr/share/nginx/html/agreements/terms_of_use/
 mkdir -p /usr/share/nginx/html/agreements/sla/
