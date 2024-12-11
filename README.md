@@ -12,9 +12,11 @@ The following variables are pre-defined in [index_content.yaml](/src/html/index_
 
 | Variable                       | Description                                   |
 |--------------------------------|-----------------------------------------------|
-| CLUSTER_ENV_VERSION            | Openshift / Kubernetes version.               |
-| CLUSTER_LOGIN_URL_OIDCIDP      | URL to login console of Rahti.                |
-| SERVICE_DOCS_URL               | URL to documents.                             |
+| SITE_TITLE                     | The title and text to be shown on top.        |
+| CLUSTERS.[*]                   | List of the clusters to be listed.            |
+| CLUSTERS.[*].ENV_VERSION       | Openshift / Kubernetes version.               |
+| CLUSTERS.[*].LOGIN_URL_OIDCIDP | URL to login console of Rahti.                |
+| CLUSTERS.[*].SERVICE_DOCS_URL  | URL to documents.                             |
 | HEADER_BANNER                  | If set, a banner will be appear in the header.|
 | LANDING_PAGE_ANNOUNCEMENTS     | The content will be shwon in the announcement secton. |
 
@@ -33,9 +35,9 @@ To see any changes made to the **content**, you can use the `reload.sh` script.
 ./reload.sh
 ```
 
-#### Hosted on Rahti (The Standalone for `dev` Branch only)
+#### Hosted on Rahti (The standalone for `dev` branch only)
 
-To see the changes during the development, you may merge your branch with `dev` branch. This will automatically trigger a build in Rahti at [this address](https://rahti-landing-dev.rahtiapp.fi). 
+To see the changes during the development, you may merge your branch with `dev` branch. This will automatically trigger a build in Rahti at [https://rahti-landing-dev.rahtiapp.fi](https://rahti-landing-dev.rahtiapp.fi).
 
 
 ### Deployment

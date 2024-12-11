@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Rahti</title>
+    <title>{{ SITE_TITLE }}</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,7 +21,7 @@
     </div>
     {% endif %}
     <c-main>
-        <c-toolbar class="relative"><c-csc-logo></c-csc-logo><a target="_self" href="#">Rahti</a></c-toolbar>
+        <c-toolbar class="relative"><c-csc-logo></c-csc-logo><a target="_self" href="#">{{ SITE_TITLE }}</a></c-toolbar>
 
         <c-container class="content">
             <c-row>
@@ -50,12 +50,14 @@
                 </div>
                 <div class="col content-c2">
                     <c-card class="card-1">
-                        <c-card-title>Rahti-2</c-card-title>
-                        <c-card-content>{{ CLUSTER_ENV_VERSION }}</c-card-content>
+                        {% for cluster in CLUSTERS %}
+                        <c-card-title>{{ cluster.NAME }}</c-card-title>
+                        <c-card-content>{{ cluster.ENV_VERSION }}</c-card-content>
                         <c-card-actions>
-                            <c-button href="{{ CLUSTER_LOGIN_URL_OIDCIDP }}">Login</c-button>
-                            <c-button href="{{ SERVICE_DOCS_URL }}">Docs</c-button>
+                            <c-button href="{{ cluster.LOGIN_URL_OIDCIDP }}">Login</c-button>
+                            <c-button href="{{ cluster.SERVICE_DOCS_URL }}">Docs</c-button>
                         </c-card-actions>
+                        {% endfor %}
                     </c-card>
                     <c-card class="card-3">
                         <c-card-title>Announcements</c-card-title>
