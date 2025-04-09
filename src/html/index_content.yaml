@@ -6,7 +6,7 @@ CLUSTERS:
   - NAME: Rahti
     ENV_VERSION: "Openshift 4.15 / Kubernetes 1.28"
     SERVICE_DOCS_URL: "https://docs.csc.fi/cloud/rahti2/"
-    LOGIN_URL_OIDCIDP: "https://console-openshift-console.apps.2.rahti.csc.fi/dashboards"
+    LOGIN_URL_OIDCIDP: "https://console.rahti.csc.fi/dashboards"
 
 # LANDING_PAGE_ANNOUNCEMENTS is a list.
 # Example for landing page announcement:
