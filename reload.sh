@@ -26,4 +26,4 @@ while getopts ":h" option; do
    esac
 done
 
-docker compose down builder && docker compose build builder && docker compose up builder
+docker compose down && docker compose build && docker compose up -d
