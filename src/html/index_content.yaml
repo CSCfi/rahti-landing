@@ -4,7 +4,7 @@ SITE_TITLE: Rahti
 
 CLUSTERS:
   - NAME: Rahti
-    ENV_VERSION: "OKD 4.19 / Kubernetes 1.32"
+    ENV_VERSION: "OKD 4.20 / Kubernetes 1.33"
     SERVICE_DOCS_URL: "https://docs.csc.fi/cloud/rahti2/"
     LOGIN_URL_OIDCIDP: "https://console.rahti.csc.fi/dashboards"
 
