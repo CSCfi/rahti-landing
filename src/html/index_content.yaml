@@ -4,9 +4,9 @@ SITE_TITLE: Rahti
 
 CLUSTERS:
   - NAME: Rahti
-    ENV_VERSION: "Openshift 4.15 / Kubernetes 1.28"
-    SERVICE_DOCS_URL: "https://docs.csc.fi/cloud/rahti2/"
-    LOGIN_URL_OIDCIDP: "https://console-openshift-console.apps.2.rahti.csc.fi/dashboards"
+    ENV_VERSION: "OKD 4.22 / Kubernetes 1.35"
+    SERVICE_DOCS_URL: "https://docs.csc.fi/cloud/rahti/"
+    LOGIN_URL_OIDCIDP: "https://console.rahti.csc.fi/"
 
 # LANDING_PAGE_ANNOUNCEMENTS is a list.
 # Example for landing page announcement:
@@ -14,8 +14,8 @@ CLUSTERS:
 #   - <p>this is a <a href="example.com">link</a></p>
 #   - <p>yet another announcement!</p>
 LANDING_PAGE_ANNOUNCEMENTS:
-
-
+  - <p>Continous Deployment solution with FluxCD <a href="https://docs.csc.fi/cloud/rahti/managed-software/fluxcd/">Read more</a><br/>
+  - LoadBalancer service type is available on Rahti! <a href="https://docs.csc.fi/cloud/rahti/configurations/loadbalancer-service/">Read more</a></p>
 
 # HEADER_BANNER is string.
 # In case you want to set a temporary banner in the header
