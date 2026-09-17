@@ -5,6 +5,7 @@ services:
     build: nginx/.
     ports:
       - "443:443"
+      - "80:80"
     volumes:
       - html:/usr/share/nginx
       - certificates:/etc/ssl/rahti
