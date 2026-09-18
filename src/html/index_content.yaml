@@ -14,8 +14,8 @@ CLUSTERS:
 #   - <p>this is a <a href="example.com">link</a></p>
 #   - <p>yet another announcement!</p>
 LANDING_PAGE_ANNOUNCEMENTS:
-  - <p>Continous Deployment solution with FluxCD <a href="https://docs.csc.fi/cloud/rahti/managed-software/fluxcd/">Read more</a></p>
-  - <p>LoadBalancer service type is available on Rahti! <a href="https://docs.csc.fi/cloud/rahti/configurations/loadbalancer-service/">Read more</a></p>
+  - Deploy a Continuous Deployment solution with FluxCD<a href="https://docs.csc.fi/cloud/rahti/managed-software/fluxcd/"><i>Read more about FluxCD</i></a>
+  - LoadBalancer service type is available on Rahti! <a href="https://docs.csc.fi/cloud/rahti/configurations/loadbalancer-service/"><i>Read more about LoadBalancer</i></a>
 
 # HEADER_BANNER is string.
 # In case you want to set a temporary banner in the header
